@@ -1,0 +1,33 @@
+
+<form [formGroup]="firstGroupForm" (ngSubmit)="onSubmit($event)">
+
+    
+      <div>
+        <label for="inputName">Name: </label>
+        <input type="email" placeholder="Name" formControlName="name" autofocus>
+      </div>
+
+      <div>
+        <label for="inputEmail">Email address: </label>
+        <input type="email"placeholder="Email address" formControlName="email">
+      </div>
+
+      <div>
+        <label for="inputPhone">Phone: </label>
+        <input type="text" placeholder="phone" formControlName="phone">
+      </div>
+
+      <div>
+        <label for="inputCountry">Country: </label>
+        <input type="text" placeholder="country" formControlName="country">
+      </div>
+      <button type="button" (click)="submitContact()">Submit contact</button>
+      <br /> <br />
+
+ 
+ 
+ 
+
+</form>
+
+<br /> 
